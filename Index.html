@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project README</title>
+  <style>
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      line-height: 1.7;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: linear-gradient(135deg, #cfe3ff, #d7e8ff);
+    }
+    h1 {
+      color: #1d3f8e;
+      border-bottom: 3px solid #4a7bff;
+      padding-bottom: 8px;
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    h2 {
+      color: #34495e;
+      margin-top: 30px;
+      font-size: 1.4rem;
+    }
+    p, li {
+      color: #555;
+      font-size: 1rem;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    .section {
+      background: linear-gradient(135deg, #e8f1ff, #f0f6ff);
+      padding: 22px 28px;
+      margin-top: 20px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      border: 1px solid rgba(255,255,255,0.6);
+      backdrop-filter: blur(6px);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    }
+  
+    /* Miner Animation */
+    .miner {
+      width: 90px;
+      height: 90px;
+      margin: 30px auto 15px;
+      background: url('https://i.imgur.com/5X3N7a6.png') no-repeat;
+      background-size: cover;
+      animation: mine 0.8s steps(4) infinite, float 3s ease-in-out infinite;
+      filter: drop-shadow(0 5px 8px rgba(0,0,0,0.2));
+    }
+
+    @keyframes mine {
+      from { background-position: 0 0; }
+      to { background-position: -360px 0; }
+    }
+
+    @keyframes float {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(-3px, -8px); }
+      100% { transform: translate(0, 0); }
+    }
+
+    /* Particle Effects */ */
+    .particles {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+    }
+
+    .particle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #8bbcff;
+      border-radius: 50%;
+      opacity: 0;
+      animation: sparkle 1.6s infinite ease-out;
+    }
+
+    .particle:nth-child(1) { left: 20px; top: 60px; animation-delay: 0.1s; }
+    .particle:nth-child(2) { left: 45px; top: 40px; animation-delay: 0.3s; }
+    .particle:nth-child(3) { left: 70px; top: 70px; animation-delay: 0.5s; }
+    .particle:nth-child(4) { left: 50px; top: 85px; animation-delay: 0.7s; }
+
+    @keyframes sparkle {
+      0% { transform: scale(0.2); opacity: 0; }
+      30% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(0.2) translateY(-15px); opacity: 0; }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Profil Pribadi</h1>
+
+  <div class="section">
+    <h2>👋 Tentang Saya</h2>
+    <p>Halo! Nama saya <strong>Diandra</strong>. Ini adalah halaman web sederhana yang berisi informasi pribadi tentang diri saya.</p>
+  </div>
+
+  <div class="section">
+    <h2>📌 Biodata Singkat</h2>
+    <ul>
+      <li>Nama: Diandra</li>
+      <li>Hobi: Menulis, desain, dan eksplorasi teknologi</li>
+      <li>Keahlian: Manajemen proyek, UI/UX, serta pembuatan dokumentasi</li>
+      <li>Kota Domisili: Pekanbaru</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🎯 Misi & Visi Pribadi</h2>
+    <p>Saya berfokus pada pengembangan diri, peningkatan skill, dan menciptakan karya yang bermanfaat untuk banyak orang. Saya percaya bahwa setiap langkah kecil dapat membawa perubahan besar.</p>
+  </div>
+
+  <div class="section">
+    <h2>⚡ Fun Facts</h2>
+    <ul>
+      <li>Suka mempelajari hal baru yang berkaitan dengan teknologi.</li>
+      <li>Pencinta visual aesthetic dan desain minimalis.</li>
+      <li>Sering mengerjakan ide dadakan di malam hari.</li>
+    </ul>
+  </div>
+
+  <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+  </div>
+  <div class="miner"></div>
+</body>
+</html>
